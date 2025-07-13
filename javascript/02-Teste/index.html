@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Números Aleatórios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Gerador De Números Aleatórios</h1>
+        <p>Clique no botão para gerar seu número.</p>
+        <button id="nbutton">Gerar</button>
+        <p>Seu número é:<strong> <span id="Res"></span></strong></p>
+    </div>
+    <script>
+      function númeroaleatorio() {
+        let naleatorio = Math.random() * 100;
+
+        document.getElementById("Res").innerText = naleatorio.toFixed(0);
+      }
+
+      let botao = document.getElementById("nbutton");
+      botao.addEventListener("click", númeroaleatorio);
+    </script>
+  </body>
+</html>
