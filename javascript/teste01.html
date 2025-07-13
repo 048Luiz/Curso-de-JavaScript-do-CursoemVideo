@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Boas Vindas!</h1>
+      <p>Vamos personalizar seu Olá com JavaScript!</p>
+      <div id="User">Olá visitante!</div>
+      <button onclick="Username()">Personalizar Interação</button>
+    </div>
+    <script>
+      function Username() {
+        let name = "Luiz";
+        document.getElementById("User").textContent = "Olá, " + name;
+      }
+    </script>
+  </body>
+</html>
